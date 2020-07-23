@@ -1,0 +1,5 @@
+<!--pages/login/login.wxml-->
+<image src='../../images/icon/logo.png' class='c-logo'></image>
+<view class="title">积分商城</view>
+<view class="msg">申请获得你的公开信息（昵称、头像等）</view>
+<button color="#eb2444"  open-type="getUserInfo" lang = "zh_CN" bindgetuserinfo = "onGotUserInfo" class=''>微信授权</button>

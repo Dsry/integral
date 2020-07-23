@@ -1,0 +1,143 @@
+.container {
+  height: 100%;
+  background: #f7f7f7;
+}
+
+.top {
+  /* display: -webkit-flex;  *//* display: flex; */
+  height: 314rpx;
+  background: rgba(66, 133, 245, 1);
+  /* justify-content: center; *//* align-items: center; */
+  overflow: hidden;
+  position: relative;
+}
+
+.pointWrap {
+  width: 230rpx;
+  height: 230rpx;
+  /* position: relative; */
+  position: absolute;
+  /* width: 100%; *//* height: 100%; */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pointBg {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pointImg {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 39rpx;
+}
+
+.pointNum {
+  font-size: 48rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  line-height: 27rpx;
+  margin-top: 16rpx;
+}
+
+.pointText {
+  font-size: 26rpx;
+  font-family: PingFang SC;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+  line-height: 32rpx;
+  margin-top: 40rpx;
+}
+
+.button {
+  position: absolute;
+  right: -20rpx;
+  top: 86rpx;
+  width: 156rpx;
+  height: 50rpx;
+  background: rgba(255, 228, 89, 1);
+  border-radius: 25rpx;
+  font-size: 20rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: rgba(43, 40, 40, 1);
+  line-height: 50rpx;
+}
+
+.title {
+  height: 76rpx;
+  margin-top: 26rpx;
+  margin-bottom: 4px;
+  font-size: 30rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: rgba(96, 96, 96, 1);
+  line-height: 76rpx;
+  text-align: center;
+  background: #fff;
+}
+
+.itemWrap {
+  background: #fff;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  align-items: center;
+  height: 120rpx;
+  border-bottom: 2px solid #f7f7f7;
+}
+
+.item {
+  width: 430rpx;
+  padding-left: 130rpx;
+}
+
+.pointTitle {
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: rgba(26, 26, 26, 1);
+  line-height: 27rpx;
+}
+
+.time {
+  font-size: 18rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: rgba(137, 137, 137, 1);
+  line-height: 27rpx;
+  margin-top: 17rpx;
+}
+
+.red {
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: rgba(182, 9, 9, 1);
+  line-height: 27rpx;
+}
+
+.green {
+  color: rgba(49, 152, 4, 1);
+  font-size: 24rpx;
+  font-family: PingFang SC;
+  font-weight: 400;
+  line-height: 27rpx;
+}

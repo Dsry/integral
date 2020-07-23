@@ -1,0 +1,25 @@
+<!--pages/pay-result/pay-result.wxml-->
+<view class='container'>
+  <image class="resBg" mode='aspectFit' src="../../images/icon/resBG.png"></image>
+  <image class="success" src="../../images/icon/success.png"></image>
+  <view wx:if="{{sts == 0}}">
+    <view class="pay-sts fail">兑换失败</view>
+    <view class='tips'>请在
+      <text class="warn">30分钟</text>内完成积分支付</view>
+    <view class='tips'>否则订单会被系统取消</view>
+    <view class="btns">
+      <view class='button checkorder' bindtap='toOrderList'>查看订单</view>
+      <view class='button payagain' bindtap='payAgain'>重新支付</view>
+    </view>
+  </view>
+
+  <view wx:if="{{sts == 1}}">
+    <view class="pay-sts succ">兑换成功</view>
+    <!-- <view class='tips'>支付积分：</view> -->
+    <view class="btns">
+      <view class='button checkorder' bindtap='toOrderList'>查看订单</view>
+      <view class='button shopcontinue' bindtap='toIndex'>继续兑换</view>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,23 @@
+<view class='container'>
+  <view class="top">
+    <view class="pointWrap">
+      <image class="pointBg" src='../../images/icon/point.png'></image>
+      <view class="content">
+        <image class="pointImg" src='../../images/icon/jifen.png'></image>
+        <view class="pointNum">{{total?total:0}}</view>
+        <view class="pointText">当前积分</view>
+      </view>
+    </view>
+    <button class="button" bindtap="goRules" hover-class='none'>积分规则</button>
+  </view>
+  <view class="main">
+    <view class='title'>积分明细</view>
+    <view class="itemWrap" wx:for='{{list}}'>
+      <view class="item">
+        <view class="pointTitle">{{item.typeName}}</view>
+        <view class="time">{{item.createTime}}</view>
+      </view>
+      <view class="{{item.integral>0?'red':'green'}}">{{item.integral>0?'+':''}}{{item.integral}}</view>
+    </view>
+  </view>
+</view>

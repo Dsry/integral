@@ -1,0 +1,14 @@
+.container {
+  height: 100%;
+  min-height: 100vh;
+  background: #f7f7f7;
+  padding-top: 50rpx;
+}
+
+.prod-detail {
+  background: #fff;
+  margin: 0 60rpx 90rpx;
+  padding: 20rpx;
+  border-radius: 8rpx;
+  line-height: 48rpx;
+}
